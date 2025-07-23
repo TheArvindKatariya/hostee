@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostee</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assests/main.css" />
+  <link rel="stylesheet" href="assests/mobile.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="shadow-sm bg-white py-3">
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <img src="assests/images/hostee_logo.png" alt="logo" class="logo-img">
+        <span class="head-title fw-bold fs-4">Hostee</span>
+      </div>
+      <form class="search_bar d-none d-md-flex">
+        <input type="search" placeholder="Search..." />
+        <i class="fas fa-search icon"></i>
+      </form>
+      <div class="d-flex gap-2 mt-2 mt-md-0">
+        <button class="Header-btn btn rounded-pill px-3">Get App</button>
+        <button class="Header-btn btn rounded-pill px-3">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-semibold" href="#">Hostee</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center text-white text-center">
+    <p class="fs-5">Welcome to Hostee</p>
+    <h1 class="display-4 fw-bold">Where Every Stay Feels Like<br>Family</h1>
+  </section>
+
+  <!-- Search Form -->
+  <section class="search-section-wrapper">
+    <form class="search-bar">
+      <div class="search-section">
+        <label class="label" for="destination">Where</label>
+        <input type="text" id="destination" name="destination" class="input-field" placeholder="Search destinations">
+      </div>
+      <div class="search-section">
+        <label class="label" for="checkin">Check in</label>
+        <input type="date" id="checkin" name="checkin" class="input-field">
+      </div>
+      <div class="search-section">
+        <label class="label" for="checkout">Check out</label>
+        <input type="date" id="checkout" name="checkout" class="input-field">
+      </div>
+      <div class="search-section">
+        <label class="label" for="guests">Who</label>
+        <input type="number" id="guests" name="guests" class="input-field" placeholder="Add guests" min="1">
+      </div>
+      <button type="submit" class="search-btn">
+        <i class="fas fa-search"></i>
+        <p>Search</p>
+      </button>
+    </form>
+  </section>
+
+  <!-- OFFERS -->
+  <section class="offers">
+    <h1>offers</h1>
+    <p>Promotions, deals, and special offers for you</p>
+    <div class="offers-list">
+      <!-- First Card -->
+      <div class="offer-card">
+        <div class="offer-content">
+          <div class="offer-title">Quick escape, quality time</div>
+          <div class="offer-description">Save up to 20% with a Getaway Deal</div>
+          <button class="btn btn-offer">Save on stays</button>
+        </div>
+        <img src="assests/images/offers/offers.jpg" class="offer-image" alt="Quick escape">
+      </div>
+
+      <!-- Second Card -->
+      <div class="offer-card">
+        <div class="offer-content">
+          <div class="offer-title">Live the dream in a vacation home</div>
+          <div class="offer-description">Choose from houses, villas, cabins, and more</div>
+          <button class="btn btn-offer">Book yours</button>
+        </div>
+        <img src="assests/images/offers/offers.jpg" class="offer-image" alt="Vacation home">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="destinations">
+    <div class="locations">
+
+      <h2>Feel at home wherever you go</h2>
+
+      <div class="destination-container">
+        <div class="row justify-content-center g-4">
+
+          <!-- Spain -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="destination-card">
+              <img src="assests/images/offers/offers.jpg" class="destination-img" alt="Spain">
+              <div class="destination-body">
+                <h5>Spain</h5>
+                <p>166,514 vacation rentals</p>
+                <button class="btn btn-outline-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Italy -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="destination-card">
+              <img src="assests/images/offers/offers.jpg" class="destination-img" alt="Italy">
+              <div class="destination-body">
+                <h5>Italy</h5>
+                <p>179,454 vacation rentals</p>
+                <button class="btn btn-outline-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- France -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="destination-card">
+              <img src="assests/images/offers/offers.jpg" class="destination-img" alt="France">
+              <div class="destination-body">
+                <h5>France</h5>
+                <p>181,734 vacation rentals</p>
+                <button class="btn btn-outline-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Greece -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="destination-card">
+              <img src="assests/images/offers/offers.jpg" class="destination-img" alt="Greece">
+              <div class="destination-body">
+                <h5>Greece</h5>
+                <p>60,560 vacation rentals</p>
+                <button class="btn btn-outline-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Switzerland -->
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <div class="destination-card">
+              <img src="assests/images/offers/offers.jpg" class="destination-img" alt="Switzerland">
+              <div class="destination-body">
+                <h5>Switzerland</h5>
+                <p>14,211 vacation rentals</p>
+                <button class="btn btn-outline-primary">Explore</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="easy">
+    <div class="easy-booking-title">
+      <h2>Booking made easy</h2>
+    </div> 
+
+  <div class="container">
+    <div class="row g-4 justify-content-center text-center text-md-start">
+      
+      <!-- No Hidden Fees -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="feature-card h-100">
+          <img src="assests/images/features/unlocked.png" class="feature-icon" alt="No hidden fees">
+          <div class="feature-title">No hidden fees</div>
+          <div class="feature-text">The price you see is the price you pay.</div>
+        </div>
+      </div>
+
+      <!-- Instant Confirmation -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="feature-card h-100">
+          <img src="assests/images/features/smartphone-tablet.png" class="feature-icon" alt="Instant confirmation">
+          <div class="feature-title">Instant confirmation</div>
+          <div class="feature-text">Most stays can be booked instantly.</div>
+        </div>
+      </div>
+
+      <!-- Flexibility -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="feature-card h-100">
+          <img src="assests/images/features/person-at-home.png" class="feature-icon" alt="Flexibility">
+          <div class="feature-title">Flexibility</div>
+          <div class="feature-text">Many properties offer free cancellation.</div>
+        </div>
+      </div>
+
+    </div>
+  </div> 
+  </section>
+
+  <section class="rooms">
+      <h2>Popular homes in Gurgaon District</h2>
+  <div class="section">
+    <div class="card-slider">
+      <!-- Repeat cards -->
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Flat 1</h3><p>₹2,747 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Flat 2</h3><p>₹2,800 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Flat 3</h3><p>₹3,000 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Flat 4</h3><p>₹2,900 • ★ 4.6</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Flat 5</h3><p>₹2,850 • ★ 4.5</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Flat 6</h3><p>₹3,200 • ★ 4.9</p></div></div>
+    </div>
+  </div>
+
+  <h2>Available in Udaipur this weekend</h2>
+  <div class="section">
+    <div class="card-slider">
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 1</h3><p>₹2,500 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 2</h3><p>₹2,800 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 3</h3><p>₹3,000 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 4</h3><p>₹2,700 • ★ 4.6</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 5</h3><p>₹2,950 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 1</h3><p>₹2,500 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 2</h3><p>₹2,800 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 3</h3><p>₹3,000 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 4</h3><p>₹2,700 • ★ 4.6</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Room 5</h3><p>₹2,950 • ★ 4.8</p></div></div>
+    </div>
+  </div>
+
+  <h2>Stay in New Delhi</h2>
+  <div class="section">
+    <div class="card-slider">
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 1</h3><p>₹3,100 • ★ 4.6</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 2</h3><p>₹3,200 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 3</h3><p>₹3,400 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 4</h3><p>₹3,150 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 5</h3><p>₹3,250 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 1</h3><p>₹3,100 • ★ 4.6</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 2</h3><p>₹3,200 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 3</h3><p>₹3,400 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 4</h3><p>₹3,150 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Delhi Stay 5</h3><p>₹3,250 • ★ 4.7</p></div></div>
+    </div>
+  </div>
+
+  <h2>Featured Villas & Apartments</h2>
+  <div class="section">
+    <div class="card-slider">
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 1</h3><p>₹4,000 • ★ 5.0</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 2</h3><p>₹3,800 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 3</h3><p>₹3,950 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 4</h3><p>₹3,700 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 5</h3><p>₹4,100 • ★ 5.0</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 1</h3><p>₹4,000 • ★ 5.0</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 2</h3><p>₹3,800 • ★ 4.9</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 3</h3><p>₹3,950 • ★ 4.8</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 4</h3><p>₹3,700 • ★ 4.7</p></div></div>
+      <div class="card"><img src="assests/images/offers/offer1.jpg"><div class="card-content"><h3>Villa 5</h3><p>₹4,100 • ★ 5.0</p></div></div>
+    </div>
+  </div>
+
+  </section>
+
+
+   <section class="info-section">
+    <div class="info-card">
+      <img src="assests/images/trust/pay.png" alt="Pay at property">
+      <div class="info-text">
+        <h4>Book now, pay at the property</h4>
+        <p>FREE cancellation on most rooms</p>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <img src="assests/images/trust/world.webp" alt="World">
+      <div class="info-text">
+        <h4>2+ million properties worldwide</h4>
+        <p>Hotels, guest houses, apartments, and more…</p>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <img src="assests/images/trust/support.png" alt="Customer support">
+      <div class="info-text">
+        <h4>Trusted 24/7 customer service you can rely on</h4>
+        <p>We’re always here to help</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <footer class="footer">
+    <div class="footer-row">
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Manage Bookings</a></li>
+          <li><a href="#">Hostee Support</a></li>
+          <li><a href="#">Community Guidelines</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="#">Top Rated Stays</a></li>
+          <li><a href="#">City Experiences</a></li>
+          <li><a href="#">Travel Stories</a></li>
+          <li><a href="#">Student Offers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Host Guidelines</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Partners</h4>
+        <ul>
+          <li><a href="#">Become a Host</a></li>
+          <li><a href="#">Partner Dashboard</a></li>
+          <li><a href="#">Property Verification</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>About Hostee</h4>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="currency">
+          <img src="https://flagcdn.com/w40/in.png" alt="INR">
+          <span>INR</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Hostee is a project by students of SKIT Jaipur to connect property owners and guests securely.</p>
+      <p>© 2025 Hostee™. All rights reserved.</p>  
+    </div>
+  </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
